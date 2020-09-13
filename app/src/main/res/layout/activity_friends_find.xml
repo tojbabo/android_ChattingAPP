@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Friends_find"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/friends_find_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="이름 입력"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:text="이름"
+                android:id="@+id/radio_name"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Friends_find_setopt"/>
+            <RadioButton
+                android:text="번호"
+                android:id="@+id/radio_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Friends_find_setopt"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <ListView
+
+        android:dividerHeight="5dp"
+        android:divider="#00ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/friends_find_list"
+        android:textFilterEnabled="true"></ListView>
+</LinearLayout>

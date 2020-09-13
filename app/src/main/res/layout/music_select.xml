@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="노래 선택"/>
+
+    <RadioGroup
+        android:id="@+id/music_group"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/music_0"
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:text="재생 안함" />
+        <RadioButton
+            android:id="@+id/music_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="빌리 아일리쉬 - 밷 가이"/>
+        <RadioButton
+            android:id="@+id/music_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="캘빈 해리스 - 퓔"/>
+        <RadioButton
+            android:id="@+id/music_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="캘빈 해리스 - 슬라이드"/>
+        <RadioButton
+        android:id="@+id/music_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="디제이 칼리드 - 노 브레이너"/>
+        <RadioButton
+        android:id="@+id/music_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="업살 - 드럭"/>
+        <RadioButton
+            android:id="@+id/music_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="맥스 - 럽미레스"/>
+        <RadioButton
+            android:id="@+id/music_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="맥스 - 워쉽"/>
+
+
+
+    </RadioGroup>
+
+</LinearLayout>

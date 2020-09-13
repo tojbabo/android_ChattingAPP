@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/user_face" />
+    <TextView
+        android:text="name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_name"
+        android:layout_marginBottom="15dp"
+        android:textSize="30dp"/>
+    <Button
+        android:textStyle="bold"
+        android:id="@+id/login"
+        android:textColor="#ffffff"
+        android:background="@color/tema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:onClick="start_onclick"/>
+    <Button
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#ffffff"
+        android:background="@color/tema"
+        android:id="@+id/song"
+        android:onClick="music_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="노래"/>
+
+
+
+
+</LinearLayout>

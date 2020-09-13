@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Friend_about"
+    android:orientation="vertical"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/my_about_face" />
+    <EditText
+        android:gravity="right"
+        android:text="name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_about_name"
+        android:textSize="20dp"/>
+    <EditText
+        android:gravity="right"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="전화번호"
+        android:enabled="false"
+        android:id="@+id/my_about_phone"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:text="message"
+        android:textSize="35dp"
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:id="@+id/my_about_message"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/my_btn_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설정 변경"/>
+        <Button
+            android:id="@+id/my_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"/>
+    </LinearLayout>
+
+</LinearLayout>

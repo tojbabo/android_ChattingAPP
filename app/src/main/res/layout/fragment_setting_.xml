@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Setting_Fragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="설정"
+            android:id="@+id/setting_head"
+            android:textColor="@color/tema"
+            android:layout_marginLeft="10dp"
+            android:textSize="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/setting_btn_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음악 선택"
+            android:layout_marginBottom="10dp"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/setting_btn_iam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로필 변경"
+            android:layout_marginBottom="10dp"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:background="?attr/selectableItemBackground"
+            android:textSize="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setting_btn_color"
+            android:text="색 변경"/>
+    </LinearLayout>
+
+</LinearLayout>

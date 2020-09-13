@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_Body"
+    android:orientation="vertical"
+    android:id="@+id/layout_main_body">
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></FrameLayout>
+    <LinearLayout
+        android:id="@+id/Main_body_color"
+        android:background="@color/tema"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="친구"
+            android:textSize="15dp"
+            android:id="@+id/main_btn_friend"
+            android:onClick="change_menu"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="채팅"
+            android:textSize="15dp"
+            android:id="@+id/main_btn_chat"
+            android:onClick="change_menu"/>
+        <Button
+            android:textSize="15dp"
+            android:onClick="change_menu"
+            android:id="@+id/main_btn_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="설정"/>
+    </LinearLayout>
+
+</LinearLayout>
